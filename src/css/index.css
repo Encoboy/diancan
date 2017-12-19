@@ -1,0 +1,913 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.shopPageTop>h1{
+			width: 750px;
+			height: 71px;
+			display: flex;
+			justify-content: space-between;
+		
+		}
+		.shopPageTop>h1>span{
+			width: 150px;
+			text-align: center;
+			line-height: 71px;
+			font-size: 50px;
+		}
+		.shopPageTop{
+			width:750px;
+			height: 300px;
+			background-color: rgb(191,177,196);
+			color:white;
+			display: flex;
+			flex-direction: column;
+		}
+		.shopPageTopMain{
+			display: flex;
+			flex-direction: row;
+			padding-left: 60px;
+			padding-top:20px;
+		}
+		
+		.sptm_img{
+			width: 130px;height: 130px;
+		}
+		.sptm_name{
+			display: flex;
+			flex-direction: column;
+			color:white;
+			padding-left: 20px;
+		}
+		.sptmn_name{
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.sptmn_peisong{
+			font-size: 25px;
+		}
+		.sptmn_gonggao{
+			padding-top:20px;
+			font-size: 23px;
+		}
+		.shopPageTop_footer{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		.shopPageTop_footer{
+			padding-top:30px;
+			font-size: 25px;
+		}
+		.sptf_left{
+			padding-left: 50px;
+		}
+		.sptf_right{
+			padding-right: 45px;
+		}
+.shopPageMain_tab{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			border:1px solid white;
+			height: 70px;
+			align-items: center;
+			border-bottom-color:gray;
+		}
+.GoodsList{
+	display: flex;
+	flex-direction: row;
+}
+.typeList{
+	display: flex;
+	flex-direction: column;
+}
+.typeListItem{
+	width: 150px;
+	font-size: 25px;
+	padding:30px 20px;
+	text-align: center;
+	border-bottom: 1px solid gainsboro;
+	background-color: rgb(248,248,248);
+}
+.foodsList{
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	justify-content: row;
+	overflow: scroll;
+}
+.Choosefoods{
+	border-top:1px solid gainsboro;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	border-bottom-color: gray;
+}
+.foodsImg{
+	width: 120px;
+	height: 120px;
+}
+.Choosefoods{
+	display: flex;
+	flex-direction: row;
+
+	width: 578px;
+}
+.ChoosefoodsLeft img{
+	width: 160px;
+	height: 160px;
+}
+
+.Choosefoodsright{
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.foodsName{
+	font-size: 30px;
+	font-weight: bold;
+}
+.cfr_two{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+.cfr_two div{
+	font-size: 20px;
+}
+.foodsPrice{
+	padding-left: 20px;
+}
+.foodsChief{
+	font-size: 20px;
+}
+.foodsVolumn,.foodsPrice{
+	font-size: 30px;
+}
+.cfr_left{
+	padding-left: 30px;
+}
+.foodsNum{
+	font-size: 30px;
+}
+.BuyCar{
+	position: fixed;
+	width: 750px;
+	bottom:0px;left: 0px;
+	display: flex;
+	flex-direction: row;
+	margin-top:20px;
+	height: 120px;
+	background-color: rgba(0,0,0,0.4);
+	justify-content: space-between;
+}
+.shopPagemain{
+	display: flex;
+	flex-direction: column;
+}
+.BuyCarRight{
+	width: 400px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+.bcr_right{
+	display:flex;
+	flex-direction: row;
+}
+.BCright{
+	width:100px;
+	height: 100px;
+	background-color: blue;
+	font-size: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top:-20px;left: 20px;
+	text-align: center;
+	line-height: 90px;
+	border:10px solid black;
+}
+.BCright span{
+	font-size: 60px;
+	color: white;
+}
+.BuyCarRightPrice{
+	display: flex;
+	flex-direction: column;
+	margin-left: 150px;
+}
+.allPrice{
+	color: white;
+	font-size: 40px;
+	padding-top: 10px;
+}
+.yunfei{
+	font-size: 24px;
+}
+.BuyCarLeft{
+	width: 150px;
+	height: 100%;
+	text-align: center;
+	line-height: 120px;
+	color:white;
+	background-color:greenyellow;
+	font-size: 30px;
+}
+.chooseCount{
+	color:red;
+	font-size: 39px;
+	position: absolute;
+	top:-28px;left: 86px;
+	z-index: 3;
+}
+.carBuying{
+	position: absolute;
+	top:-12px;left: 26px;
+	z-index: 4;
+	width: 91px;
+	height: 85px;
+	border-radius: 50%;
+}
+.bcfAdd{
+	width: 200px;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.bcfAdd span{
+	font-size: 50px;
+	color:deepskyblue;
+}
+.bcfAdd div{
+	font-size: 50px;
+}
+
+
+/*列表页*/
+.ListHeader{
+	position: fixed;
+	top:0px;left: 0px;
+	height: 80px;
+	width: 100%;
+	background-color: deepskyblue;
+	color:white;
+	z-index: 7;
+}
+.ListHeader span{
+	font-size: 50px;
+	position: absolute;
+	top:15px;left: 20px;
+}
+.ListHeader h1{
+	font-size: 40px;
+	position: absolute;
+	top:15px;left: 330px;
+}
+.list{
+	position:fixed;
+	top:80px;left: 0px;
+	width: 100%;height: 80px;
+	border:1px solid white;
+	border-bottom-color: gainsboro;
+	font-size: 15px;
+	background-color: white;
+	z-index: 7;
+}
+.list h1{
+	position: absolute;
+	top:20px;
+}
+.Listfenlei{
+	left: 40px;
+}
+.Listpaixu{
+	left: 330px;
+}
+.Listshaixuan{
+	right: 70px;
+}
+.list span{
+	font-size: 33px;
+	position: absolute;
+	top:5px;
+}
+.ListChoose{
+	position: fixed;
+	top:160px;
+	width: 100%;
+	z-index: 7;
+}
+
+.ListFenLei{
+	display: flex;
+	flex-direction: row;
+}
+.listShangjia>div{
+	width: 200px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.listPaixu{
+	background-color: white;
+}
+.listPaixu>div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	font-size: 30px;
+	border:1px solid white;
+	border-bottom-color: gainsboro;
+	
+}
+.listPaixu span{
+	font-size: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.zonghe span{
+	color:blue;
+}
+.xiaoliang span{
+	color:red;
+}
+.zuidi span{
+	color:yellow;
+}
+.zuikuai span{
+	color:greenyellow;
+}
+.shangjiapaixu{
+	margin-top:370px;
+}
+.ListSJpaixu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+}
+.listimg{
+	padding-left: 20px;
+}
+.listxinxi{
+	padding-right: 200px;
+}
+.ListTiao{
+	position: absolute;
+	top: 0px;left: 0px;
+	width: 100%;height: 100%;
+	
+}
+/*首页*/
+.indexTop{
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(0,144,255);
+	width: 750px;height: 250px;
+	padding:30px 20px 30px;
+}
+.indexTop_Header{
+	
+	width: 100%;height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: white;
+}
+.iTH_left{
+	display: flex;
+	flex-direction: row;
+	
+}
+.iTH_left span{
+	font-size: 35px;
+}
+.iTH_right{
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
+}
+.iTHr_img span{
+	font-size: 40px;
+}
+.iTHr_tianqi{
+	display: flex;
+	flex-direction: column;
+}
+.indexTop_sousuo{
+	background-color: white;
+	width: 100%;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top:30px;
+	align-items: center;
+}
+.indexTop_sousuo span{
+	font-size: 25px;
+	padding-right: 10px;
+}
+.indexTop_footer{
+	display: flex;
+	flex-direction: row;
+	font-size: 25px;
+	color:white;
+	justify-content: space-between;
+	margin-top:20px;
+}
+.indexTeHui{
+	display: flex;flex-direction: column;
+	margin-top:20px;
+	padding:0px 45px;
+	width: 750px;
+}
+.indexTeHui img{
+	width: 100px;height: 100px;
+}
+.indexTeHui div{
+	text-align: center;
+}
+.indexTeHui span{
+	display:inline-block;
+	font-size: 20px;
+	padding-top:10px;
+}
+.iTH_one,.iTH_two{
+	display: flex;flex-direction: row;
+	justify-content: space-between;
+	margin-top:20px;
+}
+.iTHthree_left,.iTHthree_right{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color:gainsboro;
+	margin:0px 10px;
+}
+.iTH_three{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 20px;
+}
+.indexXianLiang{
+	margin-top:20px;
+	display: flex;
+	flex-direction: column;
+	padding:0px 17px;
+	width: 750px;
+	
+}
+.indexXianLiang img{
+	width:150px;height: 150px;
+}
+.iXL_one,.iXL_two{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.iXLo_left,.iXLo_right{
+	display: flex;
+	flex-direction: column;
+	width:355px ;height: 300px;
+	background-color: rgba(230,230,230,0.7);
+	padding-top:20px;padding-left: 20px;
+}
+.iXLt_tejia,.iXLt_chihuo,.iXLt_pinzhi{
+	display: flex;flex-direction: column;
+	background-color: rgba(230,230,230,0.7);
+	width:233px;height: 300px;
+	margin-top:10px;
+	align-items: center;
+	padding-top:20px;
+}
+.iXLo_left h1{
+	color:orangered;
+}
+.iXLol_two,.iXLor_two{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.iXLol_three span,.iXLor_three span{
+	font-size: 25px;
+}
+.iXLolt_renshu{
+	color:red;
+}
+.iXLol_img img,.iXLor_img img{
+	margin-left: 160px;
+}
+.iXLt_tejia div,.iXLt_chihuo div,.iXLt_pinzhi div{
+	border:1px solid black;
+	font-size:25px ;
+	margin-top:12px;
+}
+.iXLt_tejia div{
+	border-color: red;
+	color: red;
+}
+.iXLt_tejia img,.iXLt_chihuo img,.iXLt_pinzhi img{
+	margin-top:30px;
+}
+.indexmain div{
+	width: 100%;height: 25px;
+	background-color:rgba(230,230,230,0.7); 
+	margin-top:20px;
+	width: 750px;
+}
+.indexmain span{
+	font-size: 35px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top:30px;
+	padding-left: 20px;
+}
+.Ms_shop{
+	display:flex;
+	flex-direction: column;
+	padding-top:30px;
+	border-top:1px solid gainsboro;
+	padding-left: 20px;
+	width: 100%;
+	margin-bottom: 20px;
+	position: relative;
+}
+.Msh_header{
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 10px;
+	
+}
+.Msheader_right{
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.Mshr_one{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 560px;
+}
+.Mshro_left{
+	display: flex;
+	flex-direction: row;
+}
+.Mshr_pinpai{
+	font-size: 30px;
+	width: 70px;height: 50px;
+	background-color: yellow;
+	text-align: center;
+	line-height: 50px;
+	margin-right: 10px;
+}
+.Mshr_name{
+	font-size: 35px;
+}
+.Mshr_one span{
+	display: inline-block;
+	font-size: 30px;
+	width: 70px;height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+.Mshr_two{
+	display: flex;
+	flex-direction: row;
+	margin-top:20px;
+	width: 560px;
+	justify-content: space-between;
+}
+.Mshr_star{
+	display: flex;
+	flex-direction: row;
+}
+.Mshr_star span{
+	font-size: 25px;
+	color: yellow;
+}
+.Mshr_star div{
+	font-size: 23px;
+}
+.Mshr_yueshou{
+	margin-left: 15px;
+}
+.Mshr_song{
+	font-size: 20px;
+	background-color: blue;
+	color:white;
+}
+.Mshr_three{
+	display: flex;
+	flex-direction: row;
+	width: 560px;
+	justify-content: space-between;
+	margin-top:10px;
+	font-size: 20px;
+}
+.Msh_footer{
+	display: flex;
+	flex-direction: column;
+	margin-left: 150px;
+	border-top: 2px dashed gainsboro;
+	font-size: 25px;
+}
+.Mshf_one{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.Mshf_two{
+	display:flex;
+	flex-direction: row;
+}
+.Mshf_one div,.Mshf_two div{
+	background-color: deeppink;
+	margin-right: 10px;
+	width: 30px;height: 30px;
+	color:white;
+	text-align: center;
+	line-height: 30px;
+}
+.Mshf_two div{
+	background-color: greenyellow;
+}
+.indexfooter{
+	position: fixed;
+	left: 0px;bottom:0px;
+	background-color: white;
+	z-index: 5;
+	display: flex;
+	flex-direction: row;
+	width: 750px;
+	height: 100px;
+	padding:0px 70px;
+	justify-content: space-between;
+	border-top: 2px solid darkgray;
+	padding-top:10px;
+}
+.if_waimai,.if_faxian,.if_dingdan,.if_my{
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+	height:90px;
+	text-align: center;
+}
+.indexfooter span{
+	font-size: 40px;
+}
+.indexfooter div{
+	font-size: 20px;
+}
+.if_waimai span,.if_my span{
+	font-size:42px ;
+}
+.sc_header{
+	width: 750px;
+	height:80px;
+	background-color: rgb(0,161,255);
+	color:white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 20px;
+}
+.sc_header span{
+	font-size: 40px;
+}
+.sc_header h1{
+	margin-left: 275px;
+}
+
+.sl_shop{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 36px;
+	height: 100px;
+	align-items: center;
+}
+.sls_right{
+	display: flex;
+	flex-direction: row;
+}
+.sls_right span{
+	font-size: 40px;
+	margin-top:7px;
+}
+.sls_shanchu span{
+	font-size: 40px;
+}
+.sl_cai{
+	display: flex;
+	flex-direction: row;
+	padding:30px 20px;
+	border-top: 2px solid gainsboro;
+	border-bottom: 1px solid gainsboro;
+}
+.sl_cai img{
+	width: 100px;height: 100px
+}
+.shoplist_xinxi{
+	display: flex;
+	flex-direction: column;
+}
+.slx_header,.slx_footer{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	width: 580px;
+	margin-left:20px ;
+}
+.slx_footer{
+	margin-top: 10px;
+	font-size: 30px;
+}
+.slx_header{
+	font-size: 40px;
+}
+.slxf_price,.slt_price{
+	color:red;
+	font-weight: bold;
+}
+.sl_canhe{
+	display: flex;
+	flex-direction: row;
+	padding:40px 20px;
+	font-size:30px ;
+	width: 740px;
+	justify-content: space-between;
+}
+.slc_price,.sljl_price span{
+	font-weight: bold;
+	color: red;
+}
+.sl_tehui{
+	border-top:1px solid gainsboro;
+	border-bottom:1px solid gainsboro;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:30px 20px;
+	font-size: 30px;
+}
+.sl_jiesuan{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:0px 20px;
+	font-size: 30px;
+	align-items: center;
+	height: 120px;
+}
+.sljr_price span{
+	color: red;
+}
+.slj_jiesuan{
+	display: flex;
+	flex-direction: row;
+}
+.sljl_price{
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.sljj_suan{
+	width: 100px;
+	height: 60px;
+	background-color: rgb(41,217,108);
+	color: white;
+	text-align: center;line-height: 60px;
+}
+.sljr_price{
+	margin-top:10px;
+}
+.list_tianchong{
+	height: 160px;width: 100%;
+	background-color: red;
+	
+}
+.list_go{
+	position: absolute;
+	top:0px;left: 0px;
+	width: 100%;height: 100%;
+}
+.shopCUR{
+	width: 750px;
+	position: fixed;
+	bottom:120px;left: 0px;
+}
+.BuyCarfoods{
+	border-bottom:1px solid gainsboro;
+	height: 89px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 20px;
+	padding-right: 20px;
+	font-size: 30px;
+	align-items: center;
+	background-color: white;
+}
+.BuyCarfoods h5{
+	font-size: 35px;
+}
+.has_shop{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:0px 20px;
+	height: 70px;
+	align-items: center;
+	font-size: 25px;
+	background-color: rgb(236,239,241);
+}
+.hs_left{
+	display: flex;
+	flex-direction: row;
+}
+.hsl_heng{
+	width: 6px;
+	height: 34px;
+	background-color: blue;
+	margin-right: 15px;
+}
+.hs_right span{
+	font-size: 30px;
+	margin-right: 8px;
+}
+.bcf_right{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.bcf_right>span{
+	color:red;
+	font-weight: bold;
+	padding-right: 30px;
+}
+.bcfAdd{
+	display: flex;
+	flex-direction: row;
+	width: 147px;
+	align-items: center;
+}
+.bcfAdd>span{
+	font-size: 45px;
+}
+.bcfAdd>div{
+	font-size: 30px;
+}
+.cfr_three{
+	margin-top:50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.Choosefoodsright{
+	padding-right: 20px;
+	width: 500px;
+}
+.cfrt_price{
+	display: flex;
+	flex-direction: row;
+}
+.cfrt_price div{
+	color:red;
+	font-size: 30px;
+	font-weight: bold;
+}
+.cfrt_price span{
+	color:red;
+	font-size: 20px;
+	margin-top:10px
+}
+.cfrt_choose{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width:120px ;
+	justify-content: space-between;
+}
+.cfrt_choose span{
+	font-size: 40px;
+	color:rgb(35,149,255)
+}
+
+.cfrt_choose div{
+	font-size: 25px;
+	margin-bottom: 2px;
+}
